@@ -537,8 +537,9 @@ margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white, #ffffff);
     margin-bottom: 16px;
+
 }
 
 
@@ -577,8 +578,24 @@ margin-bottom: 16px;
 .footer-icons-social {
     width: 24px;
     height: 24px;
-    fill: #F4F4FD;
+    fill: var(--cloud, #f4f4fd);
     
+}
+
+.social-links {
+width: 100%;
+    height: 100%;
+    background-color: var(--iris, #4d5ae5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links:hover,
+.social-links:focus {
+    background-color: #31d0aa;
 }
 
 
